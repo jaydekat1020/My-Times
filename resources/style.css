@@ -1,3 +1,4 @@
+/* <!--header css--> */
 header {
   display: flex;
   align-items: center;
@@ -9,6 +10,7 @@ header {
   font-weight: bold;
   border-bottom: 1px solid black;
   background-color: white;
+  border: 1px solid black;
 }
 
 .logo {
@@ -30,3 +32,21 @@ header {
 
 header nav {
   padding-right: 40px;
+}
+
+/* <!--main body css--> */
+  .column {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative; <!-- so the main body will position itself relative to the fixed header-->
+    top: 100px; <!-- because the body can now position iteself relative to the header, it can move away from it so it is not covered by it-->
+    border: 1px solid black;
+
+  }
+
+  .column.large{
+    display: flex;
+    width: 630px;
+    border: 10px solid black;
+  }
