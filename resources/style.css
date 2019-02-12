@@ -12,16 +12,16 @@ header {
 }
 
 .logo {
-  display: flex; <!-- allows the <div with class header to become a flex container; this only affects the items inside the div and not outside of it. It is still affected by the properties of its parent container, <header><!-- this also sets the img and span to default position which is in top-left-hand corner.--><!-- this also sets the img and span to default position which is in top-left-hand corner.This also pushes the img and span to the deafult position which is in the top left-hand corner.-->
-  align-items: center;
-  flex-grow: 1;
-  padding-left: 30px;
+  display: flex; <!-- allows the <div with class logo to become a flex container; this only affects the items inside the div and not outside of it. It is still affected by the properties of its parent container, <header><!-- this also sets the img and span to default position which is in top-left-hand corner.--><!-- this also sets the img and span to default position which is in top-left-hand corner.This also pushes the img and span to the deafult position which is in the top left-hand corner.-->
+  align-items: center; <!--centers items within the <div> .logo-->
+  flex-grow: 1; <!--allows .logo to take up extra space by a factor of 1. Since the default flex-grow is 0, the <nav> inside <header> will take up no extra space.-->
+  padding-left: 30px; <!--puts padding inside so the img and span are not touching the "border" of its parent container .logo-->
 }
-/*
+
 .logo img {
   width: 70px;
   height: 60px;
-  margin-right: 12px;
+  margin-right: 12px; <!--is between the img "border" and the other flex items around it and pushes them away. So the My Times <span> is not too close and touching it anymore.-->
 }
 
 .logo span {
@@ -29,5 +29,5 @@ header {
 }
 
 header nav {
-  padding-right: 40px;
-} */
+  padding-right: 40px; <!-- affects the items within the <nav> tag. Pushes all items away from the right side of its "border".-->
+}
