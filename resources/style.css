@@ -56,13 +56,16 @@ header nav {
 /* <!-- first column--> */
 
   main .large{
-    display: flex;
+    display: inline-flex;
     width: 630px;
     border: 1px solid black;
     flex-direction: column;
-    flex-grow: 2;
+    flex-wrap: wrap;
     margin-right: 30px;
+    justify-content: space-between;
   }
+
+    /* <!--first section--> */
 
   .large .section-1-1 {
     display: flex;
@@ -71,6 +74,7 @@ header nav {
   }
 
   .section-1-1-pic {
+    width: 100%;
     border: 1px solid black;
     background-image: url('../resources/pictures/wine glass.png'); <!-- use ../ in front of the local path to make it render properly-->
   }
@@ -82,6 +86,14 @@ header nav {
     color: white;
   }
 
+  .section-1-1-pic p {
+    width: 315px;
+    height: 315px;
+  }
+
+
+    /* <!--second section--> */
+
   .large .section-1-2 {
     display: flex;
     flex-direction: column;
@@ -89,6 +101,8 @@ header nav {
   }
 
   .section-1-2-pic {
+    width: 315px;
+    height: 300px;
     background-image: url('../resources/pictures/girl looking at trees.png');
     border: 1px solid black;
   }
@@ -100,13 +114,22 @@ header nav {
       color: white;
     }
 
+    .section-1-2-pic p {
+      width: 315px;
+      height: 315px;
+    }
+
+
+      /* <!-- third section--> */
+
   .large .section-1-3 {
     display: flex;
-    flex-direction: column;
     border: 1px solid black;
   }
 
   .section-1-3-pic {
+    width: 315px;
+    height: 315px
     background-image: url('../resources/pictures/guy with camera.png');
     border: 1px solid black;
   }
@@ -118,7 +141,13 @@ header nav {
       color: white;
     }
 
-/* <!-- second column--> */
+    .section-1-3-pic p {
+      width: 315px;
+      height: 315px;
+    }
+
+
+  /* <!-- second column--> */
 
   main .medium {
     width: 300px;
@@ -127,7 +156,10 @@ header nav {
     border: 1px solid black;
   }
 
+      /* <!-- second section--> */
+
     .section-2-2-pic {
+      width: 100%;
       background-image: url('../resources/pictures/girl with cat.png');
       border: 1px solid black;
     }
@@ -146,6 +178,8 @@ header nav {
     flex-grow: 1;
     border: 1px solid black;
   }
+
+      /* <!-- second section--> */
 
   .section-3-2 {
         border: 1px solid black;
