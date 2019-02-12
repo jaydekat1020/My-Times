@@ -1,20 +1,33 @@
 header {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  position: fixed;
-  z-index: 1;
+  display: flex; <!-- allows <header> to become a flex container-->
+  align-items: center; <!-- aligns the boxes within <header> to become centered inside-->
+  width: 100%; <!-- the width will fit the length of the screen no matter what device the browser is opened with-->
+  height: 80px;
+  position: fixed; <!-- allows <header> to be taken out of the flow and stays on page no matter where you scroll.-->
+  z-index: 1; <!-- moves the <header> forward so it doesn't overlap content that is still in the flow-->
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: 1px solid black; <!-- size shape color-->
 }
 
-.header {
+.logo {
+  display: flex; <!-- allows the <div with class header to become a flex container; this only affects the items inside the div and not outside of it. It is still affected by the properties of its parent container, <header><!-- this also sets the img and span to default position which is in top-left-hand corner.--><!-- this also sets the img and span to default position which is in top-left-hand corner.This also pushes the img and span to the deafult position which is in the top left-hand corner.-->
   align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+/*
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
-.header span {
+.logo span {
   color: MediumAquamarine;
 }
+
+header nav {
+  padding-right: 40px;
+} */
