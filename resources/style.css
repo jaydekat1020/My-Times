@@ -61,7 +61,7 @@ header nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* helped to space out the images and text without having to mess with the margins. Spaces them out evenly according to how much space is there. */
     width: 630px;
     margin-right: 30px;
   }
@@ -104,7 +104,6 @@ header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     margin-top: 15px;
     width:  300px;
     height:  300px;
@@ -126,7 +125,6 @@ header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     margin-top: 15px;
     width:  300px;
     height:  300px;
