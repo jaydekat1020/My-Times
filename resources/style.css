@@ -55,6 +55,7 @@ header nav {
     color: black;
   }
 
+
 /* <!-- first column--> */
 
   main .large{
@@ -82,11 +83,13 @@ header nav {
   }
 
   .section-1-1-pic {
+    display: flex;
     width: 630px;
+    height: 300px;
     margin-top: 0;
-    text-align: left;
     font-family: Georgia;
     font-weight: bold;
+    text-align: left;
     font-size: 40px;
     color: white;
     background-image: url('../resources/pictures/wine glass.png'); <!-- use ../ in front of the local path to make it render properly-->
