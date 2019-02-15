@@ -194,3 +194,18 @@ header nav {
     color: DimGray;
     border-bottom: 1px solid black;
   }
+
+  /* footer */
+
+  footer {
+    position: absolute;
+    z-index: 1
+    margin-top: 50px;
+    display: flex;
+    align-content: flex-end;
+  }
+
+  footer span {
+    align-items: center;
+    justify-content: center;
+  }
